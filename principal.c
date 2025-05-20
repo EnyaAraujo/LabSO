@@ -14,9 +14,9 @@ int main(){
             perror("Falha no execl.\n");
             exit(1);} 
             
-        if (pid > 0) {
+        else if (pid > 0) {
             printf("Execução do processo pai.\n");} 
         
-        if (pid < 0){
+        else{
             perror("Falha no fork.");}}
     return 0;}
